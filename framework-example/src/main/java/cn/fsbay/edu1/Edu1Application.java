@@ -16,6 +16,7 @@ import com.fsbay.framework.session.annotation.EnableSessionModule;
 public class Edu1Application {
 
   public static void main(String[] args) {
+      
     SpringApplication.run(Edu1Application.class, args);
   }
 }
