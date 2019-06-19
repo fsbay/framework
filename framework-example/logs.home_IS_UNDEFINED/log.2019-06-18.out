@@ -1,0 +1,1228 @@
+2019-06-18 12:51:47.535 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 5696 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 12:51:47.547 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 12:51:48.807 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 12:51:51.292 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 12:51:51.312 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 12:51:51.313 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 12:51:51.493 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 12:51:51.814 |-WARN  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'cacheClient'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'cacheConfig': Unsatisfied dependency expressed through field 'cp'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fsbay.framework.cache.config.CacheProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-18 12:51:51.817 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Stopping service [Tomcat]
+2019-06-18 12:51:51.961 |-ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field cp in com.fsbay.framework.cache.config.CacheConfig required a bean of type 'com.fsbay.framework.cache.config.CacheProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.fsbay.framework.cache.config.CacheProperties' in your configuration.
+
+2019-06-18 12:53:03.284 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 6360 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 12:53:03.289 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 12:53:03.926 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 12:53:06.625 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 12:53:06.646 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 12:53:06.646 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 12:53:06.836 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 12:53:07.485 |-INFO  [main] com.fsbay.framework.cache.config.CacheModuleConfig [18] -| BOOKING MODULE LOADED!
+2019-06-18 12:53:08.106 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 12:53:08.121 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 12:53:08.148 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.524 seconds (JVM running for 6.027)
+2019-06-18 12:54:36.599 |-INFO  [http-nio-5999-exec-1] org.apache.coyote.http11.Http11Processor [182] -| Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:430)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-18 12:54:36.599 |-INFO  [http-nio-5999-exec-2] org.apache.coyote.http11.Http11Processor [182] -| Error parsing HTTP request header
+ Note: further occurrences of HTTP header parsing errors will be logged at DEBUG level.
+java.lang.IllegalArgumentException: Invalid character found in method name. HTTP method names must be tokens
+	at org.apache.coyote.http11.Http11InputBuffer.parseRequestLine(Http11InputBuffer.java:430)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:684)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-18 12:54:43.264 |-INFO  [http-nio-5999-exec-4] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 12:54:43.538 |-INFO  [http-nio-5999-exec-4] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 12:55:02.022 |-INFO  [http-nio-5999-exec-7] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 12:55:02.804 |-INFO  [http-nio-5999-exec-9] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 12:55:02.997 |-INFO  [http-nio-5999-exec-2] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 12:55:03.158 |-INFO  [http-nio-5999-exec-3] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 12:55:09.239 |-INFO  [http-nio-5999-exec-5] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 12:55:10.161 |-INFO  [http-nio-5999-exec-7] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 12:55:11.148 |-INFO  [http-nio-5999-exec-9] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 15:22:57.301 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 9324 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 15:22:57.307 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 15:22:57.921 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 15:23:00.776 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 15:23:00.800 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 15:23:00.801 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 15:23:01.002 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 15:23:02.425 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 15:23:02.442 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 15:23:02.489 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.848 seconds (JVM running for 6.386)
+2019-06-18 15:23:04.444 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 15:23:04.668 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 15:23:05.311 |-INFO  [http-nio-5999-exec-3] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 15:23:05.614 |-INFO  [http-nio-5999-exec-5] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 15:23:05.876 |-INFO  [http-nio-5999-exec-7] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 15:23:06.068 |-INFO  [http-nio-5999-exec-9] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 15:23:06.251 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:00:30.857 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 12496 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:00:30.862 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:00:31.507 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:00:34.363 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:00:34.384 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:00:34.384 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:00:34.589 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:00:35.943 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:00:35.959 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:00:35.989 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.789 seconds (JVM running for 6.34)
+2019-06-18 16:00:46.715 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:00:46.948 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:01:40.435 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 16812 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:01:40.440 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:01:40.442 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:01:41.018 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:01:41.021 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:01:41.081 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:01:42.150 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:01:42.172 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:01:42.178 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:01:42.179 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:01:42.181 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:01:42.185 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:01:42.187 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:01:42.189 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:01:42.190 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:01:42.191 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:01:43.922 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:01:43.963 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:01:43.963 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:01:44.187 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:01:44.721 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:01:44.734 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:01:44.735 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:01:44.736 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:01:44.737 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:01:44.737 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:01:44.738 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:01:44.739 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:01:44.740 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:01:44.741 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:01:45.582 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:01:45.597 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:01:45.622 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.851 seconds (JVM running for 6.353)
+2019-06-18 16:01:57.191 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:01:57.443 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:02:50.206 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 2844 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:02:50.211 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:02:50.212 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:02:50.835 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:02:50.839 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:02:50.884 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:02:51.737 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:02:51.758 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:02:51.765 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:02:51.766 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:02:51.768 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:02:51.771 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:02:51.773 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:02:51.774 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:02:51.775 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:02:51.776 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:02:53.691 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:02:53.725 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:02:53.726 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:02:53.921 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:02:53.946 |-ERROR [localhost-startStop-1] org.springframework.boot.context.embedded.tomcat.TomcatStarter [63] -| Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'com.fsbay.framework.session.config.SessionConfig': Unsatisfied dependency expressed through field 'sp'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.fsbay.framework.session.config.SessionProperties' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
+2019-06-18 16:02:53.988 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Stopping service [Tomcat]
+2019-06-18 16:02:53.998 |-WARN  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2019-06-18 16:02:54.110 |-ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Field sp in com.fsbay.framework.session.config.SessionConfig required a bean of type 'com.fsbay.framework.session.config.SessionProperties' that could not be found.
+
+
+Action:
+
+Consider defining a bean of type 'com.fsbay.framework.session.config.SessionProperties' in your configuration.
+
+2019-06-18 16:03:46.001 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 16360 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:03:46.006 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:03:46.006 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:03:46.599 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:03:46.603 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:03:46.650 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:03:47.471 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:03:47.489 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:03:47.496 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:03:47.498 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:03:47.500 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:03:47.503 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:03:47.506 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:03:47.509 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:03:47.510 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:03:47.511 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:03:49.205 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:03:49.239 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:03:49.239 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:03:49.415 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:03:49.638 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:03:49.668 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:03:49.669 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:03:49.670 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:03:49.671 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:03:49.672 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:03:49.672 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:03:49.673 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:03:49.676 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:03:49.678 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:03:50.144 |-ERROR [localhost-startStop-1] org.springframework.boot.context.embedded.tomcat.TomcatStarter [63] -| Error starting Tomcat context. Exception: java.lang.IllegalArgumentException. Message: Invalid <url-pattern> [null] in filter mapping
+2019-06-18 16:03:50.177 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Stopping service [Tomcat]
+2019-06-18 16:03:50.187 |-WARN  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2019-06-18 16:03:50.207 |-ERROR [main] org.springframework.boot.SpringApplication [771] -| Application startup failed
+org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:139)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:536)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at cn.fsbay.edu1.Edu1Application.main(Edu1Application.java:15)
+Caused by: org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.initialize(TomcatEmbeddedServletContainer.java:138)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.<init>(TomcatEmbeddedServletContainer.java:87)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getTomcatEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:560)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainerFactory.getEmbeddedServletContainer(TomcatEmbeddedServletContainerFactory.java:179)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.createEmbeddedServletContainer(EmbeddedWebApplicationContext.java:166)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.onRefresh(EmbeddedWebApplicationContext.java:136)
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Invalid <url-pattern> [null] in filter mapping
+	at org.apache.catalina.core.StandardContext.validateFilterMap(StandardContext.java:3050)
+	at org.apache.catalina.core.StandardContext.addFilterMapBefore(StandardContext.java:3016)
+	at org.apache.catalina.core.ApplicationFilterRegistration.addMappingForUrlPatterns(ApplicationFilterRegistration.java:107)
+	at org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.configure(AbstractFilterRegistrationBean.java:274)
+	at org.springframework.boot.web.servlet.AbstractFilterRegistrationBean.onStartup(AbstractFilterRegistrationBean.java:232)
+	at org.springframework.boot.web.servlet.FilterRegistrationBean.onStartup(FilterRegistrationBean.java:42)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.selfInitialize(EmbeddedWebApplicationContext.java:226)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.access$000(EmbeddedWebApplicationContext.java:90)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext$1.onStartup(EmbeddedWebApplicationContext.java:215)
+	at org.springframework.boot.context.embedded.tomcat.TomcatStarter.onStartup(TomcatStarter.java:55)
+	at org.apache.catalina.core.StandardContext.startInternal(StandardContext.java:5225)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1423)
+	at org.apache.catalina.core.ContainerBase$StartChild.call(ContainerBase.java:1413)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-18 16:04:43.422 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 11944 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:04:43.426 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:04:43.427 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:04:44.063 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:04:44.066 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:04:44.099 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:04:44.881 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:04:44.899 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:04:44.907 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:04:44.908 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:04:44.911 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:04:44.913 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:04:44.916 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:04:44.918 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:04:44.919 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:04:44.920 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:04:46.611 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:04:46.645 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:04:46.647 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:04:46.816 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:04:47.022 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:04:47.055 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:04:47.057 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:04:47.058 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:04:47.059 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:04:47.062 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:04:47.063 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:04:47.064 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:04:47.066 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:04:47.068 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:04:48.335 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:04:48.351 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:04:48.380 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.587 seconds (JVM running for 6.121)
+2019-06-18 16:04:54.013 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:04:54.231 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:10:26.993 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 6464 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:10:26.998 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:10:26.998 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:10:27.627 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:10:27.630 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:10:27.673 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:10:28.718 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:10:28.742 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:10:28.749 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:10:28.751 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:10:28.753 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:10:28.755 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:10:28.758 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:10:28.759 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:10:28.760 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:10:28.761 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:10:30.617 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:10:30.656 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:10:30.656 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:10:30.849 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:10:31.212 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:10:31.252 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:10:31.253 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:10:31.254 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:10:31.254 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:10:31.256 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:10:31.257 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:10:31.258 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:10:31.261 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:10:31.263 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:10:32.482 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:10:32.496 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:10:32.521 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 6.192 seconds (JVM running for 6.768)
+2019-06-18 16:11:15.456 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 6488 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:11:15.461 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:11:15.461 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:11:16.140 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:11:16.143 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:11:16.179 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:17.122 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:17.147 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:17.154 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:11:17.156 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:11:17.158 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:11:17.160 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:11:17.163 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:11:17.166 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:11:17.167 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:11:17.169 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:11:19.217 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:11:19.253 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:11:19.254 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:11:19.458 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:11:19.691 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:19.731 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:19.732 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:11:19.733 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:11:19.733 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:11:19.734 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:11:19.734 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:11:19.735 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:11:19.739 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:11:19.740 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:11:21.251 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:11:21.258 |-ERROR [main] org.apache.catalina.core.StandardService [182] -| Failed to start connector [Connector[HTTP/1.1-5999]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-5999]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:308)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at cn.fsbay.edu1.Edu1Application.main(Edu1Application.java:15)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1178)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2019-06-18 16:11:21.270 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Pausing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:11:21.270 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Stopping service [Tomcat]
+2019-06-18 16:11:21.284 |-INFO  [main] org.apache.catalina.util.LifecycleBase [180] -| The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-06-18 16:11:21.285 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Stopping ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:11:21.285 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Destroying ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:11:21.296 |-ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 5999 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 5999, or configure this application to listen on another port.
+
+2019-06-18 16:11:47.740 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 14856 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:11:47.747 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:11:47.748 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:11:48.425 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:11:48.430 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:11:48.515 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:49.775 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:49.805 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:49.815 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:11:49.816 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:11:49.818 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:11:49.821 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:11:49.822 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:11:49.823 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:11:49.825 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:11:49.833 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:11:52.048 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:11:52.096 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:11:52.097 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:11:52.332 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:11:52.605 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:52.647 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:11:52.648 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:11:52.649 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:11:52.649 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:11:52.650 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:11:52.651 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:11:52.652 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:11:52.654 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:11:52.655 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:11:54.060 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:11:54.082 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:11:54.123 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 7.33 seconds (JVM running for 8.078)
+2019-06-18 16:12:44.343 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:12:44.559 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:13:33.685 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 5224 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:13:33.705 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:13:33.706 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:13:34.616 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:13:34.624 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:13:34.699 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:13:36.012 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:13:36.034 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:13:36.044 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:13:36.046 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:13:36.048 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:13:36.052 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:13:36.055 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:13:36.057 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:13:36.058 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:13:36.066 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:13:38.138 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:13:38.169 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:13:38.169 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:13:38.453 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:13:38.837 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:13:38.886 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:13:38.887 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:13:38.893 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:13:38.895 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:13:38.898 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:13:38.898 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:13:38.899 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:13:38.903 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:13:38.906 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:13:41.092 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:13:41.115 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:13:41.193 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 8.609 seconds (JVM running for 10.164)
+2019-06-18 16:13:53.206 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:13:53.637 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:14:01.839 |-INFO  [http-nio-5999-exec-3] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:17:15.987 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 3548 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:17:15.992 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:17:15.993 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:17:16.675 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:17:16.685 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:17:16.731 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:17:17.552 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:17:17.575 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:17:17.582 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:17:17.583 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:17:17.587 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:17:17.590 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:17:17.593 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:17:17.595 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:17:17.596 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:17:17.597 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:17:19.395 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:17:19.427 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:17:19.429 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:17:19.638 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:17:19.905 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:17:19.943 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:17:19.945 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:17:19.946 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:17:19.947 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:17:19.948 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:17:19.948 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:17:19.949 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:17:19.951 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:17:19.952 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:17:20.171 |-ERROR [localhost-startStop-1] org.springframework.boot.context.embedded.tomcat.TomcatStarter [63] -| Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'getFilterRegistration' defined in com.fsbay.framework.session.config.SessionConfig: Unsatisfied dependency expressed through method 'getFilterRegistration' parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'getFilterRegistration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2019-06-18 16:17:20.207 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Stopping service [Tomcat]
+2019-06-18 16:17:20.217 |-WARN  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2019-06-18 16:17:20.232 |-ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  getFilterRegistration defined in com.fsbay.framework.session.config.SessionConfig
+└─────┘
+
+
+2019-06-18 16:18:00.709 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 4568 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:18:00.715 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:18:00.715 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:18:01.317 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:18:01.325 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:18:01.379 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:02.219 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:02.236 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:02.241 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:18:02.242 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:18:02.245 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:18:02.248 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:18:02.250 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:18:02.251 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:18:02.252 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:18:02.253 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:18:03.922 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:18:03.956 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:18:03.957 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:18:04.134 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:18:04.357 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:04.381 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:04.382 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:18:04.383 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:18:04.383 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:18:04.383 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:18:04.384 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:18:04.384 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:18:04.388 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:18:04.390 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:18:04.569 |-ERROR [localhost-startStop-1] org.springframework.boot.context.embedded.tomcat.TomcatStarter [63] -| Error starting Tomcat context. Exception: org.springframework.beans.factory.UnsatisfiedDependencyException. Message: Error creating bean with name 'sessionFilterRegistration' defined in com.fsbay.framework.session.config.SessionConfig: Unsatisfied dependency expressed through method 'sessionFilterRegistration' parameter 0; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'sessionFilterRegistration': Requested bean is currently in creation: Is there an unresolvable circular reference?
+2019-06-18 16:18:04.613 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Stopping service [Tomcat]
+2019-06-18 16:18:04.622 |-WARN  [main] org.springframework.boot.context.embedded.AnnotationConfigEmbeddedWebApplicationContext [550] -| Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Unable to start embedded container; nested exception is org.springframework.boot.context.embedded.EmbeddedServletContainerException: Unable to start embedded Tomcat
+2019-06-18 16:18:04.637 |-ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The dependencies of some of the beans in the application context form a cycle:
+
+┌─────┐
+|  sessionFilterRegistration defined in com.fsbay.framework.session.config.SessionConfig
+└─────┘
+
+
+2019-06-18 16:18:25.011 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 5136 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:18:25.016 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:18:25.016 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:18:25.546 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:18:25.549 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:18:25.640 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:26.551 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:26.570 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:26.577 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:18:26.578 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:18:26.581 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:18:26.584 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:18:26.588 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:18:26.590 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:18:26.591 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:18:26.593 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:18:28.263 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:18:28.286 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:18:28.287 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:18:28.472 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:18:28.691 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:28.720 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:18:28.721 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:18:28.722 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:18:28.722 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:18:28.723 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:18:28.723 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:18:28.724 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:18:28.726 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:18:28.728 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:18:29.937 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:18:29.950 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:18:29.983 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.647 seconds (JVM running for 6.158)
+2019-06-18 16:18:35.054 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:18:35.256 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:19:25.704 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 14652 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:19:25.709 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:19:25.709 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:19:26.277 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:19:26.284 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:19:26.353 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:19:27.271 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:19:27.294 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:19:27.299 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:19:27.300 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:19:27.302 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:19:27.306 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:19:27.309 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:19:27.310 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:19:27.311 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:19:27.313 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:19:28.982 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:19:29.019 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:19:29.019 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:19:29.218 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:19:29.441 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:19:29.475 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:19:29.477 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:19:29.478 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:19:29.478 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:19:29.479 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:19:29.479 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:19:29.480 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:19:29.483 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:19:29.484 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:19:30.767 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:19:30.781 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:19:30.810 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.88 seconds (JVM running for 6.393)
+2019-06-18 16:19:33.774 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:19:34.005 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:24:23.521 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 10172 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:24:23.525 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:24:23.526 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:24:24.069 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:24:24.075 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:24:24.141 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:24:25.000 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:24:25.016 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:24:25.020 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:24:25.021 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:24:25.023 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:24:25.025 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:24:25.026 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:24:25.027 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:24:25.028 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:24:25.029 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:24:26.723 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:24:26.753 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:24:26.753 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:24:26.934 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:24:27.151 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:24:27.182 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:24:27.183 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:24:27.184 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:24:27.184 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:24:27.185 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:24:27.185 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:24:27.186 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:24:27.189 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:24:27.190 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:24:28.381 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:24:28.396 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:24:28.425 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.525 seconds (JVM running for 6.041)
+2019-06-18 16:24:34.866 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:24:35.072 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:26:36.172 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 15636 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:26:36.205 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:26:36.207 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:26:37.115 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:26:37.127 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:26:37.232 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:26:40.535 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:26:40.562 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:26:40.571 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:26:40.573 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:26:40.577 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:26:40.580 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:26:40.582 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:26:40.585 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:26:40.586 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:26:40.591 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:26:42.546 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:26:42.571 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:26:42.572 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:26:42.833 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:26:43.190 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:26:43.236 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:26:43.237 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:26:43.237 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:26:43.237 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:26:43.238 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:26:43.238 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:26:43.239 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:26:43.242 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:26:43.245 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:26:55.649 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:26:55.669 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:26:55.755 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 20.72 seconds (JVM running for 21.862)
+2019-06-18 16:28:57.792 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 5432 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:28:57.795 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:28:57.796 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:28:58.418 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:28:58.422 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:28:58.459 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:28:59.336 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:28:59.361 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:28:59.369 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:28:59.370 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:28:59.373 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:28:59.376 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:28:59.378 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:28:59.380 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:28:59.381 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:28:59.382 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:29:06.473 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 9864 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:29:06.485 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:29:06.486 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:29:07.355 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:29:07.359 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:29:07.433 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:29:17.787 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:29:17.814 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:29:17.825 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:29:17.826 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:29:17.829 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:29:17.835 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:29:17.838 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:29:17.840 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:29:17.842 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:29:17.844 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:29:19.849 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:29:19.884 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:29:19.885 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:29:20.146 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:29:20.501 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:29:20.546 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:29:20.547 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:29:20.547 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:29:20.548 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:29:20.548 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:29:20.548 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:29:20.549 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:29:20.551 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:29:20.553 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:29:59.667 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:29:59.685 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:29:59.801 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 54.557 seconds (JVM running for 55.83)
+2019-06-18 16:31:02.709 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 12044 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:31:02.713 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:31:02.715 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:31:03.297 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:31:03.301 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:31:03.361 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:04.236 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:04.258 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:04.264 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:31:04.265 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:31:04.266 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:31:04.269 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:31:04.270 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:31:04.273 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:31:04.273 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:31:04.274 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:31:06.051 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:31:06.087 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:31:06.088 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:31:06.264 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:31:06.491 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:06.528 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:06.529 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:31:06.530 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:31:06.530 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:31:06.531 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:31:06.532 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:31:06.533 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:31:06.536 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:31:06.538 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:31:07.812 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:31:07.818 |-ERROR [main] org.apache.catalina.core.StandardService [182] -| Failed to start connector [Connector[HTTP/1.1-5999]]
+org.apache.catalina.LifecycleException: Failed to start component [Connector[HTTP/1.1-5999]]
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:167)
+	at org.apache.catalina.core.StandardService.addConnector(StandardService.java:225)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.addPreviouslyRemovedConnectors(TomcatEmbeddedServletContainer.java:265)
+	at org.springframework.boot.context.embedded.tomcat.TomcatEmbeddedServletContainer.start(TomcatEmbeddedServletContainer.java:208)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.startEmbeddedServletContainer(EmbeddedWebApplicationContext.java:308)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.finishRefresh(EmbeddedWebApplicationContext.java:147)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545)
+	at org.springframework.boot.context.embedded.EmbeddedWebApplicationContext.refresh(EmbeddedWebApplicationContext.java:124)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:693)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:360)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1118)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1107)
+	at cn.fsbay.edu1.Edu1Application.main(Edu1Application.java:15)
+Caused by: org.apache.catalina.LifecycleException: Protocol handler start failed
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1020)
+	at org.apache.catalina.util.LifecycleBase.start(LifecycleBase.java:150)
+	... 13 common frames omitted
+Caused by: java.net.BindException: Address already in use: bind
+	at sun.nio.ch.Net.bind0(Native Method)
+	at sun.nio.ch.Net.bind(Net.java:433)
+	at sun.nio.ch.Net.bind(Net.java:425)
+	at sun.nio.ch.ServerSocketChannelImpl.bind(ServerSocketChannelImpl.java:223)
+	at sun.nio.ch.ServerSocketAdaptor.bind(ServerSocketAdaptor.java:74)
+	at org.apache.tomcat.util.net.NioEndpoint.bind(NioEndpoint.java:219)
+	at org.apache.tomcat.util.net.AbstractEndpoint.start(AbstractEndpoint.java:1178)
+	at org.apache.coyote.AbstractProtocol.start(AbstractProtocol.java:591)
+	at org.apache.catalina.connector.Connector.startInternal(Connector.java:1018)
+	... 14 common frames omitted
+2019-06-18 16:31:07.824 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Pausing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:31:07.825 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Stopping service [Tomcat]
+2019-06-18 16:31:07.836 |-INFO  [main] org.apache.catalina.util.LifecycleBase [180] -| The stop() method was called on component [StandardServer[-1]] after stop() had already been called. The second call will be ignored.
+2019-06-18 16:31:07.836 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Stopping ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:31:07.837 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Destroying ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:31:07.847 |-ERROR [main] org.springframework.boot.diagnostics.LoggingFailureAnalysisReporter [42] -| 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+The Tomcat connector configured to listen on port 5999 failed to start. The port may already be in use or the connector may be misconfigured.
+
+Action:
+
+Verify the connector's configuration, identify and stop any process that's listening on port 5999, or configure this application to listen on another port.
+
+2019-06-18 16:31:21.543 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 14812 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:31:21.548 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:31:21.548 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:31:22.492 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:31:22.496 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:31:22.550 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:23.276 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:23.296 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:23.301 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:31:23.302 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:31:23.304 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:31:23.308 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:31:23.311 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:31:23.312 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:31:23.313 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:31:23.315 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:31:24.970 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:31:24.996 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:31:24.997 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:31:25.175 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:31:25.440 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:25.482 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:31:25.483 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:31:25.484 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:31:25.485 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:31:25.486 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:31:25.486 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:31:25.488 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:31:25.493 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:31:25.494 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:31:26.965 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:31:26.984 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:31:27.022 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 6.147 seconds (JVM running for 6.651)
+2019-06-18 16:31:32.535 |-INFO  [http-nio-5999-exec-10] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:31:32.761 |-DEBUG [http-nio-5999-exec-10] com.fsbay.framework.session.utils.SessionUtils [117] -| add response cookie sid:1560846692626-D1426180F494E3FAD8B7CF1,sname:sid,cookie:{"httpOnly":false,"maxAge":-1,"name":"sid","path":"/","secure":false,"value":"1560846692626-D1426180F494E3FAD8B7CF1","version":0}
+2019-06-18 16:31:32.762 |-DEBUG [http-nio-5999-exec-10] com.fsbay.framework.session.impl.CacheProxySessionManager [130] -| HttpProxySession Create sid:1560846692626-D1426180F494E3FAD8B7CF1,sname:sid
+2019-06-18 16:31:32.781 |-INFO  [http-nio-5999-exec-10] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:31:32.846 |-DEBUG [http-nio-5999-exec-10] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560846692626-D1426180F494E3FAD8B7CF1,lastAccessedTime:0,updateInterval:1560846692
+2019-06-18 16:31:32.846 |-DEBUG [http-nio-5999-exec-10] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560846692626-D1426180F494E3FAD8B7CF1,isNew:true,isDiry:true,isExpired:false
+2019-06-18 16:31:32.916 |-WARN  [http-nio-5999-exec-9] com.fsbay.framework.session.impl.CacheProxySessionManager [107] -| exception loadSession sid:1560846692626-D1426180F494E3FAD8B7CF1,ckey:com.fsbay.session:1560846692626-D1426180F494E3FAD8B7CF1:1
+java.lang.ClassCastException: com.alibaba.fastjson.JSONObject cannot be cast to com.fsbay.framework.session.impl.HttpProxySession
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.loadSession(CacheProxySessionManager.java:99)
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.createSession(CacheProxySessionManager.java:59)
+	at com.fsbay.framework.session.wrapper.HttpProxySessionServletRequestWrapper.getSession(HttpProxySessionServletRequestWrapper.java:39)
+	at org.springframework.web.servlet.support.SessionFlashMapManager.retrieveFlashMaps(SessionFlashMapManager.java:45)
+	at org.springframework.web.servlet.support.AbstractFlashMapManager.retrieveAndUpdate(AbstractFlashMapManager.java:90)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.fsbay.framework.session.filter.ProxySessionFilter.doFilter(ProxySessionFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-18 16:31:32.954 |-WARN  [http-nio-5999-exec-9] com.fsbay.framework.session.impl.CacheProxySessionManager [107] -| exception loadSession sid:1560846692626-D1426180F494E3FAD8B7CF1,ckey:com.fsbay.session:1560846692626-D1426180F494E3FAD8B7CF1:1
+java.lang.ClassCastException: com.alibaba.fastjson.JSONObject cannot be cast to com.fsbay.framework.session.impl.HttpProxySession
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.loadSession(CacheProxySessionManager.java:99)
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.createSession(CacheProxySessionManager.java:59)
+	at com.fsbay.framework.session.wrapper.HttpProxySessionServletRequestWrapper.getSession(HttpProxySessionServletRequestWrapper.java:39)
+	at org.springframework.web.util.WebUtils.getSessionId(WebUtils.java:288)
+	at org.springframework.web.servlet.FrameworkServlet.publishRequestHandledEvent(FrameworkServlet.java:1077)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1005)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.fsbay.framework.session.filter.ProxySessionFilter.doFilter(ProxySessionFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+2019-06-18 16:45:33.599 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 15456 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:45:33.607 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:45:33.607 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:45:34.235 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:45:34.239 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:45:34.272 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:45:35.091 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:45:35.106 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:45:35.110 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:45:35.111 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:45:35.113 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:45:35.115 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:45:35.116 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:45:35.118 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:45:35.119 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:45:35.120 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:45:36.792 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:45:36.819 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:45:36.820 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:45:37.000 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:45:37.206 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:45:37.238 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:45:37.239 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:45:37.240 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:45:37.241 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:45:37.245 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:45:37.246 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:45:37.247 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:45:37.249 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:45:37.250 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:45:38.531 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:45:38.548 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:45:38.577 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 5.612 seconds (JVM running for 6.143)
+2019-06-18 16:45:57.693 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:45:57.938 |-INFO  [http-nio-5999-exec-1] com.fsbay.framework.cache.impl.RedisClusterImpl [53] -| get 获取缓存失败
+java.io.IOException: java.lang.NullPointerException
+	at org.nustaq.serialization.FSTObjectInput.readObject(FSTObjectInput.java:247)
+	at org.nustaq.serialization.FSTConfiguration.asObject(FSTConfiguration.java:1158)
+	at com.fsbay.framework.cache.impl.SerializeUtils.unSerialize(SerializeUtils.java:41)
+	at com.fsbay.framework.cache.impl.RedisClusterImpl.get(RedisClusterImpl.java:51)
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.loadSession(CacheProxySessionManager.java:99)
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.createSession(CacheProxySessionManager.java:59)
+	at com.fsbay.framework.session.wrapper.HttpProxySessionServletRequestWrapper.getSession(HttpProxySessionServletRequestWrapper.java:39)
+	at org.springframework.web.servlet.support.SessionFlashMapManager.retrieveFlashMaps(SessionFlashMapManager.java:45)
+	at org.springframework.web.servlet.support.AbstractFlashMapManager.retrieveAndUpdate(AbstractFlashMapManager.java:90)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:893)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.fsbay.framework.session.filter.ProxySessionFilter.doFilter(ProxySessionFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException: null
+	at org.nustaq.serialization.FSTObjectInput.readObjectWithHeader(FSTObjectInput.java:357)
+	at org.nustaq.serialization.FSTObjectInput.readObjectInternal(FSTObjectInput.java:331)
+	at org.nustaq.serialization.FSTObjectInput.readObject(FSTObjectInput.java:311)
+	at org.nustaq.serialization.FSTObjectInput.readObject(FSTObjectInput.java:245)
+	... 54 common frames omitted
+2019-06-18 16:45:57.939 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560846692626-D1426180F494E3FAD8B7CF1,cKey:com.fsbay.session:1560846692626-D1426180F494E3FAD8B7CF1:1 session exist:false
+2019-06-18 16:45:57.963 |-INFO  [http-nio-5999-exec-1] com.fsbay.framework.cache.impl.RedisClusterImpl [53] -| get 获取缓存失败
+java.io.IOException: java.lang.NullPointerException
+	at org.nustaq.serialization.FSTObjectInput.readObject(FSTObjectInput.java:247)
+	at org.nustaq.serialization.FSTConfiguration.asObject(FSTConfiguration.java:1158)
+	at com.fsbay.framework.cache.impl.SerializeUtils.unSerialize(SerializeUtils.java:41)
+	at com.fsbay.framework.cache.impl.RedisClusterImpl.get(RedisClusterImpl.java:51)
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.loadSession(CacheProxySessionManager.java:99)
+	at com.fsbay.framework.session.impl.CacheProxySessionManager.createSession(CacheProxySessionManager.java:59)
+	at com.fsbay.framework.session.wrapper.HttpProxySessionServletRequestWrapper.getSession(HttpProxySessionServletRequestWrapper.java:39)
+	at com.fsbay.framework.session.wrapper.HttpProxySessionServletRequestWrapper.getSession(HttpProxySessionServletRequestWrapper.java:44)
+	at cn.fsbay.edu1.controller.UserController.selectPlus(UserController.java:34)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:205)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:133)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:97)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:854)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:765)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:85)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:967)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:901)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:970)
+	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:861)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:635)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:846)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:742)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:52)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at com.fsbay.framework.session.filter.ProxySessionFilter.doFilter(ProxySessionFilter.java:65)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:99)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HttpPutFormContentFilter.doFilterInternal(HttpPutFormContentFilter.java:109)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.HiddenHttpMethodFilter.doFilterInternal(HiddenHttpMethodFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:197)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:107)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:199)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:96)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:137)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:81)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:87)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:798)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:66)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:808)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1498)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.lang.NullPointerException: null
+	at org.nustaq.serialization.FSTObjectInput.readObjectWithHeader(FSTObjectInput.java:357)
+	at org.nustaq.serialization.FSTObjectInput.readObjectInternal(FSTObjectInput.java:331)
+	at org.nustaq.serialization.FSTObjectInput.readObject(FSTObjectInput.java:311)
+	at org.nustaq.serialization.FSTObjectInput.readObject(FSTObjectInput.java:245)
+	... 65 common frames omitted
+2019-06-18 16:45:57.964 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560846692626-D1426180F494E3FAD8B7CF1,cKey:com.fsbay.session:1560846692626-D1426180F494E3FAD8B7CF1:1 session exist:false
+2019-06-18 16:45:58.188 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.utils.SessionUtils [117] -| add response cookie sid:1560847557970-E7495A862A3F7C8C97D6472,sname:sid,cookie:{"httpOnly":false,"maxAge":-1,"name":"sid","path":"/","secure":false,"value":"1560847557970-E7495A862A3F7C8C97D6472","version":0}
+2019-06-18 16:45:58.189 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [130] -| HttpProxySession Create sid:1560847557970-E7495A862A3F7C8C97D6472,sname:sid
+2019-06-18 16:45:58.208 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:45:58.292 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:0,updateInterval:1560847558
+2019-06-18 16:45:58.293 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:true,isDiry:true,isExpired:false
+2019-06-18 16:45:58.339 |-DEBUG [http-nio-5999-exec-2] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:45:58.370 |-DEBUG [http-nio-5999-exec-2] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:0
+2019-06-18 16:46:43.164 |-INFO  [main] cn.fsbay.edu1.Edu1Application [48] -| Starting Edu1Application on DESKTOP-EMESP7Q with PID 540 (E:\code\open\fsbay\framework\framework-example\target\classes started by John in E:\code\open\fsbay\framework\framework-example)
+2019-06-18 16:46:43.169 |-DEBUG [main] cn.fsbay.edu1.Edu1Application [51] -| Running with Spring Boot v1.5.21.RELEASE, Spring v4.3.24.RELEASE
+2019-06-18 16:46:43.171 |-INFO  [main] cn.fsbay.edu1.Edu1Application [597] -| The following profiles are active: dev
+2019-06-18 16:46:43.811 |-DEBUG [background-preinit] org.jboss.logging [160] -| Logging Provider: org.jboss.logging.Slf4jLoggerProvider found via system property
+2019-06-18 16:46:43.814 |-INFO  [background-preinit] org.hibernate.validator.internal.util.Version [30] -| HV000001: Hibernate Validator 5.3.6.Final
+2019-06-18 16:46:43.853 |-DEBUG [background-preinit] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:46:44.713 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:46:44.731 |-DEBUG [main] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:46:44.736 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:46:44.737 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:46:44.739 |-DEBUG [main] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:46:44.743 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:46:44.745 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:46:44.746 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:46:44.747 |-DEBUG [main] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:46:44.748 |-DEBUG [main] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:46:46.489 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Initializing ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:46:46.588 |-INFO  [main] org.apache.catalina.core.StandardService [180] -| Starting service [Tomcat]
+2019-06-18 16:46:46.589 |-INFO  [main] org.apache.catalina.core.StandardEngine [180] -| Starting Servlet Engine: Apache Tomcat/8.5.40
+2019-06-18 16:46:46.876 |-INFO  [localhost-startStop-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring embedded WebApplicationContext
+2019-06-18 16:46:47.103 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:46:47.138 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.resolver.DefaultTraversableResolver [70] -| Cannot find javax.persistence.Persistence on classpath. Assuming non JPA 2 environment. All properties will per default be traversable.
+2019-06-18 16:46:47.139 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [163] -| Setting custom MessageInterpolator of type org.springframework.validation.beanvalidation.LocaleContextMessageInterpolator
+2019-06-18 16:46:47.140 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [185] -| Setting custom ConstraintValidatorFactory of type org.springframework.validation.beanvalidation.SpringConstraintValidatorFactory
+2019-06-18 16:46:47.141 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.engine.ConfigurationImpl [199] -| Setting custom ParameterNameProvider of type com.sun.proxy.$Proxy46
+2019-06-18 16:46:47.141 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [99] -| Trying to load META-INF/validation.xml for XML based Validator configuration.
+2019-06-18 16:46:47.142 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [47] -| Trying to load META-INF/validation.xml via user class loader
+2019-06-18 16:46:47.144 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [54] -| Trying to load META-INF/validation.xml via TCCL
+2019-06-18 16:46:47.148 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ResourceLoaderHelper [60] -| Trying to load META-INF/validation.xml via Hibernate Validator's class loader
+2019-06-18 16:46:47.150 |-DEBUG [localhost-startStop-1] org.hibernate.validator.internal.xml.ValidationXmlParser [106] -| No META-INF/validation.xml found. Using annotation based configuration only.
+2019-06-18 16:46:48.841 |-INFO  [main] org.apache.coyote.http11.Http11NioProtocol [180] -| Starting ProtocolHandler ["http-nio-5999"]
+2019-06-18 16:46:48.858 |-INFO  [main] org.apache.tomcat.util.net.NioSelectorPool [180] -| Using a shared selector for servlet write/read
+2019-06-18 16:46:48.899 |-INFO  [main] cn.fsbay.edu1.Edu1Application [57] -| Started Edu1Application in 6.407 seconds (JVM running for 6.948)
+2019-06-18 16:46:54.498 |-INFO  [http-nio-5999-exec-1] org.apache.catalina.core.ContainerBase.[Tomcat].[localhost].[/] [180] -| Initializing Spring FrameworkServlet 'dispatcherServlet'
+2019-06-18 16:46:54.699 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:46:54.935 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:46:54.991 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:56
+2019-06-18 16:46:54.993 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:false,isDiry:true,isExpired:false
+2019-06-18 16:46:54.994 |-ERROR [http-nio-5999-exec-1] com.fsbay.framework.cache.impl.RedisClusterImpl [72] -| Cache保存失败：java.lang.RuntimeException: Class cn.fsbay.edu1.entity.Demo does not implement Serializable or externalizable
+2019-06-18 16:46:55.026 |-DEBUG [http-nio-5999-exec-2] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:46:55.058 |-DEBUG [http-nio-5999-exec-2] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:56
+2019-06-18 16:46:56.264 |-DEBUG [http-nio-5999-exec-3] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:46:56.269 |-INFO  [http-nio-5999-exec-3] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:46:56.273 |-DEBUG [http-nio-5999-exec-3] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:57
+2019-06-18 16:46:56.274 |-DEBUG [http-nio-5999-exec-3] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:false,isDiry:true,isExpired:false
+2019-06-18 16:46:56.275 |-ERROR [http-nio-5999-exec-3] com.fsbay.framework.cache.impl.RedisClusterImpl [72] -| Cache保存失败：java.lang.RuntimeException: Class cn.fsbay.edu1.entity.Demo does not implement Serializable or externalizable
+2019-06-18 16:46:56.304 |-DEBUG [http-nio-5999-exec-4] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:46:56.312 |-DEBUG [http-nio-5999-exec-4] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:58
+2019-06-18 16:47:22.776 |-DEBUG [http-nio-5999-exec-10] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:47:22.780 |-INFO  [http-nio-5999-exec-10] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:47:22.783 |-DEBUG [http-nio-5999-exec-10] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:84
+2019-06-18 16:47:22.783 |-DEBUG [http-nio-5999-exec-10] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:false,isDiry:true,isExpired:false
+2019-06-18 16:47:22.784 |-ERROR [http-nio-5999-exec-10] com.fsbay.framework.cache.impl.RedisClusterImpl [72] -| Cache保存失败：java.lang.RuntimeException: Class cn.fsbay.edu1.entity.Demo does not implement Serializable or externalizable
+2019-06-18 16:47:22.816 |-DEBUG [http-nio-5999-exec-9] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:47:22.824 |-DEBUG [http-nio-5999-exec-9] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:84
+2019-06-18 16:47:23.552 |-DEBUG [http-nio-5999-exec-8] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:47:23.557 |-INFO  [http-nio-5999-exec-8] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:47:23.560 |-DEBUG [http-nio-5999-exec-8] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:85
+2019-06-18 16:47:23.560 |-DEBUG [http-nio-5999-exec-8] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:false,isDiry:true,isExpired:false
+2019-06-18 16:47:23.561 |-ERROR [http-nio-5999-exec-8] com.fsbay.framework.cache.impl.RedisClusterImpl [72] -| Cache保存失败：java.lang.RuntimeException: Class cn.fsbay.edu1.entity.Demo does not implement Serializable or externalizable
+2019-06-18 16:47:23.589 |-DEBUG [http-nio-5999-exec-7] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:47:23.592 |-DEBUG [http-nio-5999-exec-7] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:85
+2019-06-18 16:47:48.160 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:47:48.170 |-INFO  [http-nio-5999-exec-1] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:47:48.173 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:109
+2019-06-18 16:47:48.173 |-DEBUG [http-nio-5999-exec-1] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:false,isDiry:true,isExpired:false
+2019-06-18 16:47:48.174 |-ERROR [http-nio-5999-exec-1] com.fsbay.framework.cache.impl.RedisClusterImpl [72] -| Cache保存失败：java.lang.RuntimeException: Class cn.fsbay.edu1.entity.Demo does not implement Serializable or externalizable
+2019-06-18 16:48:07.370 |-DEBUG [http-nio-5999-exec-3] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:48:07.375 |-INFO  [http-nio-5999-exec-3] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:48:07.379 |-DEBUG [http-nio-5999-exec-3] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:129
+2019-06-18 16:48:07.379 |-DEBUG [http-nio-5999-exec-3] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:false,isDiry:true,isExpired:false
+2019-06-18 16:48:07.380 |-ERROR [http-nio-5999-exec-3] com.fsbay.framework.cache.impl.RedisClusterImpl [72] -| Cache保存失败：java.lang.RuntimeException: Class cn.fsbay.edu1.entity.Demo does not implement Serializable or externalizable
+2019-06-18 16:48:08.469 |-DEBUG [http-nio-5999-exec-4] com.fsbay.framework.session.impl.CacheProxySessionManager [104] -| loadSession sid:1560847557970-E7495A862A3F7C8C97D6472,cKey:com.fsbay.session:1560847557970-E7495A862A3F7C8C97D6472:1 session exist:true
+2019-06-18 16:48:08.474 |-INFO  [http-nio-5999-exec-4] cn.fsbay.edu1.service.impl.UserServiceImpl [18] -| UserServiceImpl selectByIdPlus{"id":100000000,"name":"张小花"}
+2019-06-18 16:48:08.476 |-DEBUG [http-nio-5999-exec-4] com.fsbay.framework.session.impl.CacheProxySessionManager [166] -| HttpProxySession request sid:1560847557970-E7495A862A3F7C8C97D6472,lastAccessedTime:1560847558293,updateInterval:130
+2019-06-18 16:48:08.477 |-DEBUG [http-nio-5999-exec-4] com.fsbay.framework.session.impl.CacheProxySessionManager [72] -| HttpProxySession saveSession sid:1560847557970-E7495A862A3F7C8C97D6472,isNew:false,isDiry:true,isExpired:false
+2019-06-18 16:48:08.478 |-ERROR [http-nio-5999-exec-4] com.fsbay.framework.cache.impl.RedisClusterImpl [72] -| Cache保存失败：java.lang.RuntimeException: Class cn.fsbay.edu1.entity.Demo does not implement Serializable or externalizable

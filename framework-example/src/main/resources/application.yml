@@ -1,0 +1,9 @@
+server:
+  port: 5999
+spring:
+  application:
+    name: edu1-cloud
+  profiles:
+    active: dev
+logging:
+  config: classpath:logback-fintech.xml

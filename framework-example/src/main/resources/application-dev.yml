@@ -1,0 +1,29 @@
+
+eureka:
+  client:
+    healthcheck:
+      enabled: true
+    serviceUrl:
+      defaultZone: http://user:password123@localhost:5114/eureka
+  instance:
+    prefer-ip-address: true
+    instance-id: ${spring.application.name}:${spring.cloud.client.ipAddress}:${spring.application.instance_id:${server.port}}
+    lease-renewal-interval-in-seconds: 5
+    
+management: 
+  security:
+    enabled: false
+com:
+   fsbay:
+      cache:
+         type: redisCluster
+         cachePrefix: com.fsbay.xxx
+         address: 192.168.11.148:7000,192.168.11.148:7001,192.168.11.148:7002,192.168.11.148:7003,192.168.11.148:7004,192.168.11.148:7005
+      dslock:
+         enabled: true
+      dstoken:
+         enabled: true
+      id:
+         cache:
+             enabled: true
+         

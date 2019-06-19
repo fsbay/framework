@@ -1,0 +1,21 @@
+how to use?
+
+1. add config @EnableCacheModule
+
+2.config the properties
+for redis config
+com:
+	fsbay:
+		cache:
+			type: redisSingle
+			cachePrefix: com.fsbay.xx
+			address: 127.0.0.1:6379
+
+for redis cluster
+com:
+	fsbay:
+		cache:
+			type: redisCluster
+			cachePrefix: com.fsbay.xxx
+			address: 192.168.11.148:7000,192.168.11.148:7001,192.168.11.148:7002,192.168.11.148:7003,192.168.11.148:7004,192.168.11.148:7005
+

@@ -1,0 +1,117 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<groupId>com.fsbay.framework</groupId>
+	<artifactId>framework-parent</artifactId>
+	<version>1.0</version>
+	<packaging>pom</packaging>
+
+	<name>framework-parent</name>
+	<url>http://maven.apache.org</url>
+
+	<distributionManagement>
+
+	</distributionManagement>
+
+	<properties>
+		<build.manifest.section>Build Details</build.manifest.section>
+		<build.unknown>UNKNOWN</build.unknown>
+		<build.number>${build.unknown}</build.number>
+		<build.revision>${build.unknown}</build.revision>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<framework.version>1.0</framework.version>
+	</properties>
+
+	<dependencyManagement>
+		<dependencies>
+			<dependency>
+			    <groupId>org.springframework.boot</groupId>
+			    <artifactId>spring-boot-starter-web</artifactId>
+			    <version>1.5.21.RELEASE</version>
+			</dependency>
+			<dependency>
+			    <groupId>redis.clients</groupId>
+			    <artifactId>jedis</artifactId>
+			    <version>3.0.1</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.apache.commons</groupId>
+			    <artifactId>commons-lang3</artifactId>
+			    <version>3.9</version>
+			</dependency>
+			<dependency>
+			    <groupId>com.alibaba</groupId>
+			    <artifactId>fastjson</artifactId>
+			    <version>1.2.58</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.slf4j</groupId>
+			    <artifactId>slf4j-api</artifactId>
+			    <version>1.7.26</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.projectlombok</groupId>
+			    <artifactId>lombok</artifactId>
+			    <version>1.18.8</version>
+			    <scope>provided</scope>
+			</dependency>
+			<dependency>
+				<groupId>org.bouncycastle</groupId>
+				<artifactId>bcprov-jdk16</artifactId>
+				<version>1.46</version>
+			</dependency>
+			<dependency>
+			    <groupId>commons-codec</groupId>
+			    <artifactId>commons-codec</artifactId>
+			    <version>1.12</version>
+			</dependency>
+			<dependency>
+				<groupId>org.apache.servicemix.bundles</groupId>
+				<artifactId>
+					org.apache.servicemix.bundles.oauth-commons
+				</artifactId>
+				<version>20100527_2</version>
+			</dependency>
+			<dependency>
+			    <groupId>org.aspectj</groupId>
+			    <artifactId>aspectjweaver</artifactId>
+			    <version>1.9.4</version>
+			</dependency>
+			<dependency>
+			    <groupId>de.ruedigermoeller</groupId>
+			    <artifactId>fst</artifactId>
+			    <version>2.57</version>
+			</dependency>
+			<dependency>
+			    <groupId>com.google.guava</groupId>
+			    <artifactId>guava</artifactId>
+			    <version>28.0-jre</version>
+			</dependency>
+		</dependencies>
+	</dependencyManagement>
+	
+	<build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>3.1</version>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <configuration>
+                    <skip>true</skip>
+                </configuration>
+                <version>2.18.1</version>
+            </plugin>
+
+        </plugins>
+    </build>
+</project>
